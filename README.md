@@ -1,2 +1,1 @@
-# price-basket
-Service to price products in basket
+# Price Basket Service ReadMe.docx
