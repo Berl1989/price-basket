@@ -1,0 +1,37 @@
+<dataset>
+	<PRODUCT product_id="1" product_code="SOUP" product_name="Soup"
+		price_per_unit="0.65" measurement_unit="TIN" />
+	<PRODUCT product_id="2" product_code="BRED" product_name="Bread"
+		price_per_unit="0.80" measurement_unit="LOAF" />
+	<PRODUCT product_id="3" product_code="MILK" product_name="Milk"
+		price_per_unit="1.30" measurement_unit="BOTTLE" />
+	<PRODUCT product_id="4" product_code="APPL" product_name="Apples"
+		price_per_unit="1.00" measurement_unit="BAG" />
+<!-- Discounts -->
+<!-- Apples at 10% off -->
+	<DISCOUNTED_PRODUCT_CONFIG
+		discount_product_config_id="1" product_id="4" discounted_product_qty="2"
+		discount_multiplier="0.1" />
+
+	<DISCOUNT_RULE discount_rule_id="1" is_active="TRUE"
+		single_product_discount="TRUE" product_id="4" eligibility_qty="1"
+		discount_product_config_id="1" discount_text="Apples at 10% off" />
+<!-- Milk at 5% Off -->
+	<DISCOUNTED_PRODUCT_CONFIG
+		discount_product_config_id="2" product_id="3" discounted_product_qty="1"
+		discount_multiplier="0.05" />
+
+	<DISCOUNT_RULE discount_rule_id="2" is_active="TRUE"
+		single_product_discount="TRUE" product_id="3" eligibility_qty="1"
+		discount_product_config_id="2" discount_text="Milk at 5% off" />
+
+<!-- Bread loaf at 50% on 2 tins of soup -->
+	<DISCOUNTED_PRODUCT_CONFIG
+		discount_product_config_id="3" product_id="2" discounted_product_qty="1"
+		discount_multiplier="0.5" />
+
+	<DISCOUNT_RULE discount_rule_id="3" is_active="TRUE"
+		single_product_discount="FALSE" product_id="1" eligibility_qty="2"
+		discount_product_config_id="3" discount_text="Bread loaf at 50% on 2 tins of soup" />
+		
+</dataset>
