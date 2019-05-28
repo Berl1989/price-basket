@@ -53,7 +53,7 @@ public class BillingServiceImpl implements BillingService{
 						.isValidProduct(productName))
 				.map(productName -> new ShoppedProduct(productName,
 						productConfig.getPriceOfProductPerUnit(productName)))
-				.forEach(product -> basket.addProductToCart(product));
+				.forEach(product -> basket.addProductToBasket(product));
 		
 		// pass basket to price calculator
 		basketPriceCalculator.calculateBasketPrice(basket);

@@ -29,32 +29,32 @@ public class CombinationDiscount{
 		this.discountText = discountText;
 	}	
 	
-	public boolean isDiscountApplicableForCart(Basket basket) {
+	public boolean isDiscountApplicableForBasket(Basket basket) {
 		if (basket
 				.getShoppedProducts()
 				.stream()
 				.noneMatch(
-						shoppedProduct -> cartHasEligibleProduct(shoppedProduct)))
+						shoppedProduct -> basketHasEligibleProduct(shoppedProduct)))
 			return false;
 
 		if (basket
 				.getShoppedProducts()
 				.stream()
 				.noneMatch(
-						shoppedProduct -> cartHasDiscountedProduct(shoppedProduct)))
+						shoppedProduct -> basketHasDiscountedProduct(shoppedProduct)))
 			return false;
 		
 		return true;
 
 	}
 	
-	private boolean cartHasEligibleProduct(ShoppedProduct shoppedProduct) {
+	private boolean basketHasEligibleProduct(ShoppedProduct shoppedProduct) {
 		return shoppedProduct.getProductName().equals(
 				this.eligibleProductName)
 				&& shoppedProduct.getQuantity() >= this.eligibleProductQuantity;
 	}
 
-	private boolean cartHasDiscountedProduct(ShoppedProduct shoppedProduct) {
+	private boolean basketHasDiscountedProduct(ShoppedProduct shoppedProduct) {
 		return shoppedProduct.getProductName().equals(
 				this.discountedProductName)
 				&& shoppedProduct.getQuantity() >= this.discountedProductQuantity;

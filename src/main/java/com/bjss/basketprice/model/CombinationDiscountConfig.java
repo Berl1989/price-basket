@@ -16,7 +16,7 @@ public class CombinationDiscountConfig {
 	
 	public List<CombinationDiscount> getApplicableDiscounts(Basket basket) {
 		
-		return combinationDiscounts.stream().filter(discount -> discount.isDiscountApplicableForCart(basket))
+		return combinationDiscounts.stream().filter(discount -> discount.isDiscountApplicableForBasket(basket))
 		.collect(Collectors.toList());
 	}
 	

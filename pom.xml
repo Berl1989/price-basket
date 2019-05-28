@@ -9,10 +9,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bjss</groupId>
-	<artifactId>shopping-cart</artifactId>
+	<artifactId>price-basket</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>shopping-cart</name>
-	<description>Demo project for Spring Boot</description>
+	<name>price-basket</name>
 
 	<properties>
 		<java.version>1.8</java.version>

@@ -19,8 +19,8 @@ public class Basket {
 	
 	private String invalidProducts;
 
-	public void addProductToCart(ShoppedProduct shoppedProduct) {
-		ShoppedProduct shoppingCardProduct=getProductFromCart(shoppedProduct);
+	public void addProductToBasket(ShoppedProduct shoppedProduct) {
+		ShoppedProduct shoppingCardProduct=getProductFromBasket(shoppedProduct);
 		if(Objects.isNull(shoppingCardProduct)){
 			shoppedProducts.add(shoppedProduct);
 		}else{
@@ -39,7 +39,7 @@ public class Basket {
 		
 	}
 
-	private ShoppedProduct getProductFromCart(ShoppedProduct shoppedProduct) {
+	private ShoppedProduct getProductFromBasket(ShoppedProduct shoppedProduct) {
 		return shoppedProducts
 				.stream()
 				.filter(basketProduct -> shoppedProduct.equals(basketProduct)).findFirst().orElse(null);

@@ -1,4 +1,4 @@
---shopping cart product
+--basket products
 insert into PRODUCT (product_id, product_code, product_name, price_per_unit, measurement_unit) 
 values (1, 'SOUP', 'Soup' , 0.65, 'TIN');
 insert into PRODUCT (product_id, product_code, product_name, price_per_unit, measurement_unit) 

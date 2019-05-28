@@ -15,10 +15,10 @@ public class CalculatorTestHelper {
 		ShoppedProduct bread = new ShoppedProduct("Bread", new BigDecimal("0.80"));
 		ShoppedProduct soup = new ShoppedProduct("Soup", new BigDecimal("0.65"));
 		
-		basket.addProductToCart(apples);
-		basket.addProductToCart(milk);
-		basket.addProductToCart(bread);
-		basket.addProductToCart(soup);
+		basket.addProductToBasket(apples);
+		basket.addProductToBasket(milk);
+		basket.addProductToBasket(bread);
+		basket.addProductToBasket(soup);
 		
 		return basket;
 	}
@@ -27,11 +27,11 @@ public class CalculatorTestHelper {
 		Basket basket = new Basket();
 		ShoppedProduct apples = new ShoppedProduct("Apples", new BigDecimal("1.00"));
 		
-		basket.addProductToCart(apples);
-		basket.addProductToCart(apples);
-		basket.addProductToCart(apples);
-		basket.addProductToCart(apples);
-		basket.addProductToCart(apples);
+		basket.addProductToBasket(apples);
+		basket.addProductToBasket(apples);
+		basket.addProductToBasket(apples);
+		basket.addProductToBasket(apples);
+		basket.addProductToBasket(apples);
 		
 		return basket;
 	}
@@ -40,8 +40,8 @@ public class CalculatorTestHelper {
 		Basket basket = new Basket();
 		ShoppedProduct milk = new ShoppedProduct("Milk", new BigDecimal("1.30"));
 		
-		basket.addProductToCart(milk);
-		basket.addProductToCart(milk);
+		basket.addProductToBasket(milk);
+		basket.addProductToBasket(milk);
 		
 		return basket;
 	}
@@ -56,9 +56,9 @@ public class CalculatorTestHelper {
 		ShoppedProduct bread = new ShoppedProduct("Bread", new BigDecimal("0.80"));
 		ShoppedProduct soup = new ShoppedProduct("Soup", new BigDecimal("0.65"));
 		
-		basket.addProductToCart(soup);
-		basket.addProductToCart(bread);
-		basket.addProductToCart(soup);
+		basket.addProductToBasket(soup);
+		basket.addProductToBasket(bread);
+		basket.addProductToBasket(soup);
 		
 		return basket;
 	}
@@ -68,13 +68,13 @@ public class CalculatorTestHelper {
 		ShoppedProduct bread = new ShoppedProduct("Bread", new BigDecimal("0.80"));
 		ShoppedProduct soup = new ShoppedProduct("Soup", new BigDecimal("0.65"));
 		
-		basket.addProductToCart(soup);
-		basket.addProductToCart(soup);
-		basket.addProductToCart(soup);
-		basket.addProductToCart(soup);
-		basket.addProductToCart(bread);
-		basket.addProductToCart(bread);
-		basket.addProductToCart(bread);
+		basket.addProductToBasket(soup);
+		basket.addProductToBasket(soup);
+		basket.addProductToBasket(soup);
+		basket.addProductToBasket(soup);
+		basket.addProductToBasket(bread);
+		basket.addProductToBasket(bread);
+		basket.addProductToBasket(bread);
 		
 		return basket;
 	}
