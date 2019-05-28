@@ -33,9 +33,6 @@ public class BillingServiceImpl implements BillingService{
 	@Autowired
 	ProductConfiguration productConfig;
 	
-	@Autowired
-	BillWriter basketBillWriter;
-	
 	@PostConstruct
 	public void init() {
 		
